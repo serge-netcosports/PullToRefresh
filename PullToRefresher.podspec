@@ -12,8 +12,12 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "8.0"
 
-  s.source       = { :git => "https://github.com/Yalantis/PullToRefresh.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/serge-netcosports/PullToRefresh.git", :tag => s.version }
   s.source_files = "PullToRefresh/*.swift"
   s.module_name  = "PullToRefresh"
+
+  s.dependency 'RxSwift', '~> 5'
+  s.dependency 'RxCocoa', '~> 5'
+  s.dependency 'NVActivityIndicatorView', '~> 4.8.0'
 
 end
